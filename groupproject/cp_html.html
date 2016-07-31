@@ -1,11 +1,5 @@
-import cherrypy
-
-class Landing(object):		
-    @cherrypy.expose
-    def index(self):
-        return """<html>
-		<!DOCTYPE html>
-					<head>
+<!DOCTYPE html>
+<head>
     <title>
     CherryPy project for COSC 1336
     </title>
@@ -27,7 +21,3 @@ Davis Richardson, Brett Piatek, Malorie Lara and Marla Boeer are Novice computer
       <img src="" alt="slide5">
     </div>
 </body>
-				  </html>"""
-
-if __name__ == "__main__":
-    cherrypy.quickstart(Landing(), '/')
